@@ -42,6 +42,19 @@ p {
   color: rgb(255, 84, 0);
 }
 
+.section-title {
+  color: rgb(19, 19, 24);
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.section-description {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+}
+
 /* Navbar */
 .nav-bar {
   display: flex;
@@ -103,7 +116,7 @@ p {
 
 .explore-container > p {
   line-height: 26px;
-  margin-top: 24px;  
+  margin-top: 24px;
 }
 .travel-inputs {
   margin-top: 3rem;
@@ -118,7 +131,7 @@ p {
 
 .travel-inputs > div > input,
 select,
-button {
+.banner-btn {
   width: 100%;
   font-size: 1rem;
   font-weight: 400;
@@ -136,4 +149,39 @@ button {
   justify-content: center;
   align-items: center;
   gap: 8px;
+}
+
+/* our popular tours */
+.popular-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.popular-section-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+/* .popular-section-content p,
+.popular-section-content > ul > li{
+    text-align: left;
+} */
+
+.popular-section-image > img {
+  width: 100%;
+}
+
+.popular-section-btn > button {
+  border-radius: 8px;
+  background-color: rgb(255, 84, 0);
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 25px;
+  text-align: center;
+  border: none;
+  padding: 14px 35px;
+  margin-top: 8px;
 }
