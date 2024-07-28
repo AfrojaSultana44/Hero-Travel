@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+/* font-family: "Mulish", sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+/* shared styles */
+.container {
+  width: 90%;
+  margin: 5rem auto;
+  border-radius: 1rem;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: normal;
+}
+
+h3 {
+  color: rgb(19, 19, 24);
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: normal;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#span {
+  color: rgb(255, 84, 0);
+}
+
+/* Navbar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo > img {
+  width: 48px;
+  height: 52px;
+  margin-right: 16px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links > li {
+  list-style: none;
+}
+
+.nav-links > li > a {
+  text-decoration: none;
+  font-size: 1.12rem;
+  font-weight: 400;
+  color: rgb(66, 66, 71);
+}
+
+/* Banner */
+.explore-your-travel {
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8),
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../Images/banner-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 7rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.explore-container {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.explore-container > p {
+  line-height: 26px;
+  margin-top: 24px;  
+}
+.travel-inputs {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  backdrop-filter: blur(4px);
+}
+
+.travel-inputs > div > input,
+select,
+button {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(19, 19, 24, 0.5);
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn-primary {
+  background-color: rgb(255, 84, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
