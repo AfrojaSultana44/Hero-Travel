@@ -250,9 +250,8 @@ select,
 }
 
 .footer-logo {
-  width: 240px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -288,7 +287,11 @@ select,
 }
 
 .social i {
-  margin-right: 16px;
+  margin-right: 30px;
+}
+
+.social i:last-child{
+  margin-right: 0;
 }
 
 .footer-section hr {
