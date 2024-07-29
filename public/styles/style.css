@@ -92,6 +92,10 @@ p {
   color: rgb(66, 66, 71);
 }
 
+.ham-burger {
+  display: none;
+}
+
 /* Banner */
 .explore-your-travel {
   background-image: linear-gradient(
@@ -290,7 +294,7 @@ select,
   margin-right: 30px;
 }
 
-.social i:last-child{
+.social i:last-child {
   margin-right: 0;
 }
 
@@ -304,4 +308,104 @@ select,
   font-size: 1rem;
   font-family: 300;
   line-height: 19px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 576px) {
+  /* shared styles */
+  .container {
+    margin: 3rem auto;
+  }
+
+  h1 {
+    font-size: 1.37rem;
+  }
+
+  h3 {
+    font-size: 1.31rem;
+  }
+
+  p {
+    font-size: 0.87rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .section-description {
+    font-size: 0.87rem;
+    line-height: 24px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .ham-burger {
+    display: block;
+    color: rgb(19, 19, 24);
+    font-size: 24px;
+  }
+
+  .logo > img {
+    width: 28px;
+    height: 33px;
+    margin-right: 10px;
+  }
+
+  .explore-your-travel {
+    padding: 4rem 0;
+  }
+
+  .travel-inputs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .explore-container {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .popular-section,
+  .row-1,
+  .row-2,
+  .row-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .destination-content {
+    width: 90%;
+    padding: 0 10px;
+  }
+
+  .footer-section-content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .footer-logo > img {
+    width: 28px;
+    height: 33px;
+    margin-right: 10px;
+  }
+
+  .footer-logo > h3 {
+    font-size: 1.31rem;
+  }
+
+  .social{
+    height: 25px;
+    font-size: 20px;
+  }
+
+  .footer-description {
+    font-size: 0.87rem;
+  }
+
+  .copy-right {
+    font-size: 0.87rem;
+  }
 }
