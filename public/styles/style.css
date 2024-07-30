@@ -168,10 +168,9 @@ select,
   row-gap: 24px;
 }
 
-/* .popular-section-content p,
-.popular-section-content > ul > li{
-    text-align: left;
-} */
+.section-list {
+  padding-left: 40px;
+}
 
 .popular-section-image > img {
   width: 100%;
@@ -239,6 +238,204 @@ select,
   font-size: 1.75rem;
   font-weight: 800;
   line-height: 35px;
+}
+
+
+/* Deals and discounts */
+.deals-and-discounts-content{
+width: 60%;
+margin: 0 auto;
+text-align: center;
+margin-bottom: 48px;
+}
+
+.deals-and-discounts-content > p{
+  margin-top: 24px;
+}
+
+.deals-and-discounts-section-1, .deals-and-discounts-section-2, .deals-and-discounts-section-3{
+  background-image: url("../Images/trees.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* height: 500px; */
+  padding: 56px;
+  border-radius: 16px;
+}
+
+.deals-and-discounts-section-2{
+  margin: 24px 0px;
+  background-image: url("../Images/trees-2.png");
+
+}
+
+.deals-and-discounts-card{
+width: 50%;
+background: rgba(255, 255, 255, 0.8);
+border-radius: 16px;
+backdrop-filter: blur(5px);
+padding: 50px;
+}
+
+.deals-card{
+margin-left: auto;
+}
+
+/* .deals-and-discounts-section-1{
+  display: flex;
+}
+
+.hidden-card{
+  width: 50%;
+} */
+
+.deals-and-discounts-logo-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.deals-and-discounts-logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deals-and-discounts-logo-img{
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.deals-and-discounts-logo-img > img{
+  width: 100%;
+  height: 100%;
+}
+
+.deals-and-discounts-logo > span{
+  color: #5A5A5D;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.deals-and-discounts-card > h4{
+  color: #131318;
+  font-weight: 800;
+  font-size: 1.75rem;
+  margin-bottom: 16px;
+}
+
+.deals-and-discounts-card > p{
+  color: #5A5A5D;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.deals-and-discounts-card > h5{
+  color: #FF5400;
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+.deals-and-discounts-card-btn> button{
+  padding: 14px 25px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-top: 24px;
+}
+
+
+
+
+/* Newsletter */
+.newsletter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.newsletter-form {
+  width: 40%;
+  border: 1px solid rgb(255, 84, 0);
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.newsletter-form > h3 {
+  margin-bottom: 16px;
+}
+
+.newsletter-section-img {
+  width: 60%;
+  position: relative;
+}
+
+.floating-card {
+  position: absolute;
+  border-radius: 16px;
+  background-color: rgb(255, 84, 0);
+  padding: 35px;
+  text-align: center;
+  bottom: 54px;
+  right: 10px;
+ transform: rotate(-19.63deg);
+padding: 35px 45px;
+
+}
+
+.floating-card-title {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.floating-card-discount{
+  color: rgb(255, 255, 255);
+font-size: 32px;
+font-weight: 800;
+}
+
+.inputs-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.newsletter-form-input > input {
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(19, 19, 24, 0.3);
+}
+
+.subscribe-btn {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-family: Mulish;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
+  border-radius: 8px;
+  padding: 14px 0px;
+  background: rgb(255, 84, 0);
+  border: none;
+  margin-top: 8px;
+}
+
+.newsletter-section-img > img {
+  width: 100%;
+  height: 100%;
 }
 
 /* Footer */
@@ -380,6 +577,26 @@ select,
     padding: 0 10px;
   }
 
+  .deals-and-discounts-card{
+    width: 100%;
+  }
+
+  .deals-and-discounts-content{
+    width: 90%;
+  }
+
+  .newsletter-section {
+    flex-direction: column;
+  }
+
+  .newsletter-form {
+    width: 100%;
+  }
+
+  .newsletter-section-img {
+    width: 100%;
+  }
+
   .footer-section-content {
     width: 90%;
     margin: 0 auto;
@@ -396,7 +613,7 @@ select,
     font-size: 1.31rem;
   }
 
-  .social{
+  .social {
     height: 25px;
     font-size: 20px;
   }
